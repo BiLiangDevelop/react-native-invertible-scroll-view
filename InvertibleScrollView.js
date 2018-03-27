@@ -9,14 +9,14 @@ import {
     Platform,
 } from 'react-native';
 import ScrollableMixin from 'react-native-scrollable-mixin';
-
+import createReactClass = from 'create-react-class';
 import cloneReferencedElement from 'react-clone-referenced-element';
 
 type DefaultProps = {
   renderScrollComponent: (props: Object) => ReactElement;
 };
 
-let InvertibleScrollView = React.createClass({
+let InvertibleScrollView = createReactClass({
   mixins: [ScrollableMixin],
 
   propTypes: {
